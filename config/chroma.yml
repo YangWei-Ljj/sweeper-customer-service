@@ -1,0 +1,12 @@
+collection_name: agent
+# 相对路径由 vector_store 通过 get_abs_path 统一解析到项目根（修复原版相对 CWD 产生孤儿库）
+persist_directory: chroma_db
+k: 4
+data_path: data
+md5_hex_store: md5.text
+allow_knowledge_file_type: ["txt", "md", "pdf"]
+
+# 原版 200 过碎，改为 400/80（问答资料按段落成块更完整）
+chunk_size: 400
+chunk_overlap: 80
+separators: ["\n\n", "\n", "。", "！", "？", ".", "!", "?", " ", ""]

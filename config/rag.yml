@@ -1,0 +1,6 @@
+# 改造版：对话/嵌入模型已迁移到项目根 .env（DeepSeek 云端 + Ollama 本地）
+# 本文件仅保留说明，不再被 model/factory.py 使用。
+# chat_model_name: 由 .env 的 MODEL_PROVIDER / DEEPSEEK_MODEL / OLLAMA_MODEL 决定
+# embedding_model_name: 固定为 .env 的 OLLAMA_EMBED_MODEL（本地 qwen3-embedding:4b）
+chat_model_name: deepseek-flash
+embedding_model_name: qwen3-embedding:4b

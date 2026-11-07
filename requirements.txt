@@ -1,0 +1,15 @@
+streamlit>=1.36
+openai>=1.40
+langchain>=0.3
+langchain-core>=0.3
+langchain-openai>=0.2
+langchain-ollama>=0.3
+langchain-chroma>=0.2
+langchain-text-splitters>=0.3
+langchain-community>=0.3
+chromadb>=0.5
+pypdf>=4.0
+python-dotenv>=1.0
+requests>=2.31
+pytest>=8.0
+pyyaml>=6.0
